@@ -397,3 +397,11 @@ footer a::after {
     }
 
 }
+
+@media (min-width: 769px) and (max-width: 1023px) {
+
+    .header-area {
+        margin: 0 20px;
+    }
+
+}   
