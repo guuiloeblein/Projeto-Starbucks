@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Oswald:wght@400;700&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-oswald: 'Oswald', sans-serif;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.bar { 
+    background-color: #106341;
+    width: 168px;
+    height: 22px;
+}
+
+h1 { 
+    color: #111111;;
+    font-weight: bold;
+    font-size: 95px;
+    font-family: var(--font-oswald);
+    line-height: 100px; 
+    margin: 0; 
+    margin-bottom: 40px;
+}
+
+h2 { 
+    color: #111111;;
+    font-weight: bold;
+    font-size: 37px;
+    font-family: var(--font-oswald);
+    line-height: 40px;
+    margin: 0;
+    margin: 20px 0;
+}
+
+.button {
+    display: inline-block; 
+    border: 2px solid #454545;
+    border-radius: 3px;
+    padding: 10px 30px;
+    color: #454545;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #454545;
+    color: white;
+}
+
+header .line { 
+    background-color: #117050;
+    height: 10px;
+}
+
+.header-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.header-left img {
+    width: 64px;
+    height: 64px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-search input {
+    font-size: 16px;
+    padding: 9px 15px;
+    border: 1px solid #999999;
+    outline: 0; 
+    width: 250px; 
+}
+
+.header-search form {
+    display: flex;
+}
+
+.header-search button {
+    border: 0; 
+    background-color: transparent; 
+    margin-left: -30px; 
+    cursor: pointer;
+}
+
+.header-search button img {
+    width: 16px;
+    height: 16px;
+}
+
+.header-menu {
+    margin-left: 50px; 
+    cursor: pointer;
+}
+
+.header-menu img {
+    width: 24px;
+    height: 24px;
+}
+
+.banner {
+    background-image: url('../images/bg.jpg');
+    background-position: center;
+    background-size: cover; 
+    padding-top: 90px; 
+    padding-bottom: 90px;
+    padding-left: 35px;
+}
+
+.banner-images img { 
+    width: 148px;
+    height: 148px;
+    margin: 60px 40px 0 0;
+    border: 6px solid #117050;
+    border-radius: 50%; 
+}
+
+/* AREA 1*/
+
+.area1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.area1-content {
+    padding: 80px;
+}
+
+.area1-quote {
+    margin-bottom: 30px;
+}
+
+.area1-text {
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+
+.area1-img1 {
+    background-image: url('../images/f2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 350px; 
+}
+
+.area1-img2 {
+    background-image: url('../images/f1.jpg');
+    background-size: cover;
+    background-position: center;
+    
+    grid-column: 2 / 3; 
+    grid-row: 1 / 3; 
+}
+
+/* AREA 2*/
+
+.area2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.area2-content {
+    padding: 80px;
+}
+
+.area2-text {
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+
+.area2-img1 {
+    background-image: url('../images/f4.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 453px; 
+}
+
+.area2-img2 {
+    background-image: url('../images/f3.jpg');
+    background-size: cover;
+    background-position: center;
+    
+    grid-column: 1 / 2; 
+    grid-row: 1 / 3; 
+}
+
+/* AREA 3*/
+
+.area3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.area3-content {
+    background-image: url('../images/bg2.jpg');
+    background-size: cover;
+    background-position: left;
+    padding: 290px 80px;
+}
+
+.area3-text {
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+
+.area3-img1 {
+    background-image: url('../images/f5.jpg');
+    background-size: cover;
+    background-position: center;
+    
+    grid-column: 2 / 3;   
+}
+
+/* AREA 4*/
+
+.area4 {
+    display: grid;
+    grid-template-columns: 490px 1fr;
+}
+
+.area4-content {
+    background-color: #e8e9ee;
+    padding: 150px 80px;
+}
+
+.area4-text {
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+
+.area4-img {
+    background-image: url('../images/bg3.jpg');
+    background-position: center;
+}
+
+
+/* FOOTER*/
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 80px;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #106341;
+}
+
+footer a::after {
+    content: '\00a0\1F517';
+}
+
+
+
+
+/* RESPONSIVIDADE */
+
+@media (min-width: 2000px) {
+
+    .area1-content, .area2-content {
+       padding: 80px 300px;
+    }
+
+    .area3-content {
+        padding-left: 250px;
+        padding-right: 200px;
+    }
+
+    .area3-img1 {
+        background-position: top;
+    }
+
+    .area4 {
+        grid-template-columns: 900px 1fr;
+    }
+
+    .area4-content {
+        padding-left: 250px;
+    }
+
+}
+
+/* RESPONSIVIDADE */
+
+@media (min-width: 1024px) {
+
+    .container {
+       padding: 0 80px;
+    }
+
+    .area4-img {
+        background-position: center;
+        background-size: cover;
+
+    }
+
+}
+
+/* RESPONSIVIDADE */
+
+@media (min-width: 426px) and (max-width: 768px) {
+
+    .header-area {
+        margin: 0 20px;
+    }
+
+    .area1-content, .area2-content {
+        padding: 40px;
+    }
+
+    .area3-content {
+        padding: 290px 40px;
+    }
+
+    .area4 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .area4-content {
+        padding: 100px 30px;
+    }
+
+}   
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 425px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .header-menu {
+        margin-left: 20px;
+        cursor: pointer;
+    }
+
+    .header-search input {
+        max-width: 110px;
+    }
+
+    h1 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    h2 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .banner {
+        padding-left: 0px;
+    }
+
+    .banner-images img { 
+        width: 80px;
+        height: 80px;
+        margin: 60px 4px 0 0;
+        border: 3px solid #117050;
+        border-radius: 50%; 
+    }
+
+    .area1,
+    .area2,
+    .area3,
+    .area4 {
+        grid-template-columns: 1fr;
+    }
+
+    .area1-content,
+    .area2-content,
+    .area3-content,
+    .area4-content {
+        padding: 30px;
+    }
+
+    footer {
+        font-size: 13px;
+        padding: 30px 0;
+    }
+
+}
